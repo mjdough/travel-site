@@ -11493,7 +11493,7 @@
 	  }, {
 	    key: "keyPressHandler",
 	    value: function keyPressHandler(e) {
-	      if (e / keyCode == 27) {
+	      if (e.keyCode == 27) {
 	        this.closeModal();
 	      }
 	    }
@@ -11506,7 +11506,7 @@
 	  }, {
 	    key: "closeModal",
 	    value: function closeModal() {
-	      this.modal.remove("modal--is-visible");
+	      this.modal.removeClass("modal--is-visible");
 	    }
 	  }]);
 
