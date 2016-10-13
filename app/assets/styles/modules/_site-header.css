@@ -3,11 +3,12 @@
   position: absolute;
   width: 100%;
   z-index: 2;
-  transition: background-color .3s ease-out;
+  transition: background-color: .3s ease-out;
 
   &--is-expanded {
     background-color: rgba($mainBlue, .55);
   }
+
 
   @mixin atMedium {
     position: fixed;
@@ -20,7 +21,7 @@
 
   &__btn-container {
     @mixin atMedium {
-          float: right;
+      float: right;
     }
   }
 
