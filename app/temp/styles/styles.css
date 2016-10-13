@@ -639,7 +639,7 @@ a {
 
 @media(min-width: 1010px) {
 
-  .page-section--testimonials.lazyloaded {
+  .page-section--testimonials {
     background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
     background-size: cover;
   }
@@ -962,7 +962,7 @@ a {
   overflow: hidden;
   width: 160px;
   height: 160px;
-  margin: 0 auto -80 auto;
+  margin: 0 auto -80px auto;
   position: relative;
   top: -80px;
   border: 6px solid rgba(255, 255, 255, .8);
@@ -981,7 +981,7 @@ a {
   text-align: center;
   font-weight: 400;
   font-size: .9375rem;
-  margin: .25rem 0;
+  margin: .25rem 0 1rem 0;
 }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp

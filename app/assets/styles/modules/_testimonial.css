@@ -17,7 +17,7 @@
     overflow: hidden;
     width: 160px;
     height: 160px;
-    margin: 0 auto -80 auto;
+    margin: 0 auto -80px auto;
     position: relative;
     top: -80px;
     border: 6px solid rgba(255, 255, 255, .8);;
@@ -36,7 +36,7 @@
     text-align: center;
     font-weight: 400;
     font-size: .9375rem;
-    margin: .25rem 0;
+    margin: .25rem 0 1rem 0;
   }
 
 }
