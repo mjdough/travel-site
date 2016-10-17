@@ -18,11 +18,7 @@ class Modal {
   }
 
   keyPressHandler(e) {
-<<<<<<< HEAD
     if (e/keyCode == 27) {
-=======
-    if (e.keyCode == 27) {
->>>>>>> create-modal
       this.closeModal();
     }
   }
@@ -33,11 +29,7 @@ class Modal {
   }
 
   closeModal() {
-<<<<<<< HEAD
-    this.modal.remove("modal--is-visible");
-=======
-    this.modal.removeClass("modal--is-visible");
->>>>>>> create-modal
+    this.modal.removeClass("modal--is-visible")
   }
 }
 
