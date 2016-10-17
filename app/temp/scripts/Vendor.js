@@ -65,7 +65,7 @@
 
 	'use strict';
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 	/*!
 	 * modernizr v3.3.1
@@ -293,10 +293,10 @@
 	   *   elem.style.WebkitBorderRadius
 	   * instead of something like the following, which would be technically incorrect:
 	   *   elem.style.webkitBorderRadius
-	    * Webkit ghosts their properties in lowercase but Opera & Moz do not.
+	     * Webkit ghosts their properties in lowercase but Opera & Moz do not.
 	   * Microsoft uses a lowercase `ms` instead of the correct `Ms` in IE8+
 	   *   erik.eae.net/archives/2008/03/10/21.48.10/
-	    * More here: github.com/Modernizr/Modernizr/issues/issue/21
+	     * More here: github.com/Modernizr/Modernizr/issues/issue/21
 	   *
 	   * @access private
 	   * @returns {string} The string representing the vendor-specific style properties
