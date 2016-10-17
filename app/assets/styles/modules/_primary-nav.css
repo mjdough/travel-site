@@ -39,6 +39,7 @@
     color: #FFF;
     font-weight: 300;
     text-decoration: none;
+<<<<<<< HEAD
     padding: 5px 8px;
     font-size: .8rem;
     background-color: rgba($mainBlue, .5);
@@ -52,5 +53,9 @@
         color: #fabb69;
       }
     }
+=======
+    display: block;
+    padding: 12px 0;
+>>>>>>> header
   }
 }
