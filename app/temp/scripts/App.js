@@ -11217,8 +11217,8 @@
 	  }
 
 	  _createClass(StickyHeader, [{
-	    key: 'refreshWayppoints',
-	    value: function refreshWayppoints() {
+	    key: 'refreshWaypoints',
+	    value: function refreshWaypoints() {
 	      this.lazyImages.load(function () {
 	        Waypoint.refreshAll();
 	      });
@@ -11648,7 +11648,7 @@
 	  }, {
 	    key: "keyPressHandler",
 	    value: function keyPressHandler(e) {
-	      if (e / keyCode == 27) {
+	      if (e.keyCode == 27) {
 	        this.closeModal();
 	      }
 	    }
@@ -11668,7 +11668,7 @@
 	  return Modal;
 	}();
 
-	exports.default = modal;
+	exports.default = Modal;
 
 /***/ }
 /******/ ]);
