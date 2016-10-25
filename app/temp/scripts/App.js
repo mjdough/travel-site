@@ -11071,8 +11071,8 @@
 	  }
 
 	  _createClass(StickyHeader, [{
-	    key: 'refreshWayppoints',
-	    value: function refreshWayppoints() {
+	    key: 'refreshWaypoints',
+	    value: function refreshWaypoints() {
 	      this.lazyImages.load(function () {
 	        Waypoint.refreshAll();
 	      });
@@ -11502,7 +11502,11 @@
 	  }, {
 	    key: "keyPressHandler",
 	    value: function keyPressHandler(e) {
+<<<<<<< HEAD
 	      if (e / keyCode == 27) {
+=======
+	      if (e.keyCode == 27) {
+>>>>>>> ebb88cdccfef04c4a36d9e92e52595b59113d79f
 	        this.closeModal();
 	      }
 	    }
@@ -11522,7 +11526,11 @@
 	  return Modal;
 	}();
 
+<<<<<<< HEAD
 	exports.default = modal;
+=======
+	exports.default = Modal;
+>>>>>>> ebb88cdccfef04c4a36d9e92e52595b59113d79f
 
 /***/ }
 /******/ ]);
