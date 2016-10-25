@@ -41,12 +41,12 @@ gulp.task('createSprite', ['beginClean'], function() {
 
 gulp.task('createPngCopy', ['createSprite'], function() {
   return gulp.src('./app/temp/sprite/css/*.svg')
-  .pipe(svg2png())
-  .pipe(gulp.dest('./app/temp/sprite/css'));
+    .pipe(svg2png())
+    .pipe(gulp.dest('./app/temp/sprite/css'));
 });
 
 gulp.task('copySpriteGraphic', ['createPngCopy'], function() {
-  return gulp.src('./app/temp/sprite/css/**/*.{svg, png}')
+  return gulp.src('./app/temp/sprite/css/**/*.{svg,png}')
     .pipe(gulp.dest('./app/assets/images/sprites'));
 });
 
@@ -57,7 +57,7 @@ gulp.task('copySpriteCSS', ['createSprite'], function() {
 });
 
 gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function() {
-  return del('./app/temp/sprite/');
+  return del('./app/temp/sprite');
 });
 
 gulp.task('icons', ['beginClean', 'createSprite', 'createPngCopy', 'copySpriteGraphic', 'copySpriteCSS', 'endClean']);
